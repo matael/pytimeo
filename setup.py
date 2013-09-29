@@ -23,17 +23,26 @@
 #  0. You just DO WHAT THE FUCK YOU WANT TO.
 #
 
-from distutils.core import setup
-from pytimeo import __version__
+from setuptools import setup
 
 setup(
     name='pytimeo',
-    version=__version__,
+    version='0.0.1',
     description='Interface between Python and SETRAM\'s service Timeo',
     author='Mathieu (matael) Gaborit',
     author_email='mathieu@matael.org',
+    license='WTFPL',
     url='http://blog.matael.org/',
-    py_modules=['pytimeo']
-
-
+    py_modules=['pytimeo'],
+    install_requires=[
+        'beautifulsoup4',
+        'requests'
+    ],
+    classifiers=[
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Intended Audience :: Developers',
+        'Development Status :: 4 - Beta'
+    ],
 )
