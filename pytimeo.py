@@ -61,8 +61,8 @@ class Timeo:
         """ Récupére les informations sur tous les arrêts d'une même ligne dans
         un sens de circulation donné (A ou R, voir API SETRAM... ahem.).
 
-        lignesens : ligne à parser et sens de circulation (ex: 8_R , T1_A, ...)
-        attr_to_extract : paramètre à extraire (par défaut : nom de l'arrêt)
+        lignesens -- ligne à parser et sens de circulation (ex: 8_R , T1_A, ...)
+        attr_to_extract -- paramètre à extraire (par défaut : nom de l'arrêt)
 
         """
 
@@ -92,11 +92,9 @@ class Timeo:
     def get_arret(self, lignesens, code):
         """ Récupère les prochains passages à un arret donné
 
-        lignesens : code de ligne (ligne+sens, voir get_ligne())
-        code : code timéo de l'arret
+        lignesens -- code de ligne (ligne+sens, voir get_ligne())
+        code -- code timéo de l'arret
         """
-
-        """ Récupère les prochains passage à l'arrêt demandé """
 
         ligne,sens = lignesens.split('_')
         code = str(code)
