@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Timeo() &mdash; pyTimeo 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="pyTimeo 0.0.1 documentation" href="index.html" />
+    <link rel="prev" title="pyTimeo" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="pyTimeo"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">pyTimeo 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-pytimeo">
+<span id="timeo"></span><h1>Timeo()<a class="headerlink" href="#module-pytimeo" title="Permalink to this headline">¶</a></h1>
+<p>Interface between Python and the SETRAM transportation service.</p>
+<dl class="class">
+<dt id="pytimeo.Timeo">
+<em class="property">class </em><tt class="descclassname">pytimeo.</tt><tt class="descname">Timeo</tt><big>(</big><em>URL='http://dev.actigraph.fr/actipages/setram/module/mobile/pivk/relais.html.php'</em><big>)</big><a class="reference internal" href="_modules/pytimeo.html#Timeo"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytimeo.Timeo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface entre Python et le service Timéo de la SETRAM</p>
+<dl class="method">
+<dt id="pytimeo.Timeo.get_arret">
+<tt class="descname">get_arret</tt><big>(</big><em>lignesens</em>, <em>code</em><big>)</big><a class="reference internal" href="_modules/pytimeo.html#Timeo.get_arret"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytimeo.Timeo.get_arret" title="Permalink to this definition">¶</a></dt>
+<dd><p>Récupère les prochains passages à un arret donné</p>
+<p>lignesens &#8211; code de ligne (ligne+sens, voir get_ligne())
+code &#8211; code timéo de l&#8217;arret</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytimeo.Timeo.get_lignes">
+<tt class="descname">get_lignes</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/pytimeo.html#Timeo.get_lignes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytimeo.Timeo.get_lignes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Récupère une hashtable entre les lignes (et leur direction) et le code de ligne correspondant</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pytimeo.Timeo.getall_arrets">
+<tt class="descname">getall_arrets</tt><big>(</big><em>lignesens</em>, <em>attr_to_extract='name'</em><big>)</big><a class="reference internal" href="_modules/pytimeo.html#Timeo.getall_arrets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pytimeo.Timeo.getall_arrets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Récupére les informations sur tous les arrêts d&#8217;une même ligne dans
+un sens de circulation donné (A ou R, voir API SETRAM... ahem.).</p>
+<p>lignesens &#8211; ligne à parser et sens de circulation (ex: 8_R , T1_A, ...)
+attr_to_extract &#8211; paramètre à extraire (par défaut : nom de l&#8217;arrêt)</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">pyTimeo</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/timeo_module.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="pyTimeo"
+             >previous</a> |</li>
+        <li><a href="index.html">pyTimeo 0.0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Mathieu (matael) Gaborit.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
