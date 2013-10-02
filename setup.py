@@ -27,7 +27,7 @@ from setuptools import setup
 
 setup(
     name='pytimeo',
-    version='0.0.1',
+    version='0.0.2',
     description='Interface between Python and SETRAM\'s service Timeo',
     author='Mathieu (matael) Gaborit',
     author_email='mathieu@matael.org',

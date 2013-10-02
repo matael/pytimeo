@@ -31,7 +31,7 @@ import requests
 import re
 from bs4 import BeautifulSoup as BS
 
-__version__='0.0.1'
+__version__='0.0.2'
 VERSION = tuple(map(int, __version__.split('.')))
 
 __all__ = ['Timeo']
