@@ -129,6 +129,8 @@ class Timeo:
 
         for i in stops:
             if i.find('imminent') > -1 or i.find('en cours') > -1: stoptimes.append("maintenant")
+            elif i.find('Aucun') > -1 :
+                pass # no dates available, let stoptimes as it is : empty.
             else:
                 next = re.search("(\d+ minutes?)", i)
                 if not next:
