@@ -26,7 +26,7 @@ setup(
     description='Interface between Python and SETRAM\'s service Timeo',
     author='Mathieu (matael) Gaborit',
     author_email='mathieu@matael.org',
-    license='WTFPL',
+    license='GNU/GPL',
     url='https://github.com/Matael/pytimeo',
     py_modules=['pytimeo'],
     install_requires=[
